@@ -75,6 +75,7 @@ jobs:
         with:
           java-version: '21'
           distribution: 'corretto'
+          truc
 
       - name: Prepare build
         run: |
