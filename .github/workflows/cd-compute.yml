@@ -47,7 +47,7 @@ jobs:
           fi
 
           response=$(curl --fail -X POST "https://api.prod.poja.io/gh-repos/${{ github.repository }}/github-workflow-state" \
-            -H "Authorization: AppBear ${{ secrets.GITHUB_TOKEN }}" \
+            -H "Authorization: AppBearer ${{ secrets.GITHUB_TOKEN }}" \
             -H "Content-Type: application/json" \
             -d "$(jq -n \
                   --arg app_env_deployment_id "$app_env_deployment_id_value" \
